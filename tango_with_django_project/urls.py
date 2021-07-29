@@ -20,6 +20,7 @@ from django.conf.urls import include
 from rango import views
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    url(r'^$', views.index, name='index'),
+    url(r'^rango/', include('rango.urls')),
     path('admin/', admin.site.urls),
 ]
