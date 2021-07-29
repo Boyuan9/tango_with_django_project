@@ -1,0 +1,9 @@
+Adform=window.Adform||{};
+Adform.host="https://track.adform.net";
+Adform.shost="https://s1.adform.net";
+Adform.scriptBase=Adform.shost+"/banners/scripts/";
+Adform.cache="626";
+Adform.ADFBannerData={"URL":"https://track.adform.net/adfserve/?bn=47265460;click=https://aax-eu.amazon-adsystem.com/x/c/Qq2oYNfzhQiFlVtUlBIz-r8AAAF684cm3QMAAADKAQCsNVE/","CREFURL":"https%3a%2f%2fimages-na.ssl-images-amazon.com%2f","BN":47265460,"BSURL":"https://cdn.doubleverify.com/dvbs_src.js?ctx=11268475&cmp=2323066&plc=47265460&sid=1485070&dvregion=0&unit=320x50","BSDATA":"1","READ_CONSENT":true};
+if(!Adform.ADFBannerParams)Adform.ADFBannerParams=[];
+Adform.ADFBannerParams.push(Adform.ADFBannerData);
+typeof Adform.ADFUtilInstance=="undefined"?document.write('<scr'+'ipt type="text/javascript" src="https://s1.adform.net/stoat/626/s1.adform.net/bootstrap.js"></scr'+'ipt>'):new Adform.ADFBanner();
