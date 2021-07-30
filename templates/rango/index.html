@@ -29,17 +29,17 @@
         </div>
         <h1>Most Viewed Pages</h1>
         <div>
-        {% if categories %}
+        {% if pages %}
         <ul>
-            {% for category in categories %}
+            {% for category in pages %}
             <!-- Following line changed to add an HTML hyperlink -->
             <li>
-            <a href="/rango/category/{{ category.slug }}">{{ category.name }}</a>
+            <a href="/rango/category/{{ category.slug }}">{{ category.title }}</a>
             </li>
             {% endfor %}
         </ul>
         {% else %}
-            <strong>There are no categories present.</strong>
+            <strong>There are no page present.</strong>
         {% endif %}
         </div>
         <a href="/rango/add_category/">Add a New Category</a><br />

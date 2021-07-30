@@ -25,6 +25,14 @@ class Page(models.Model):
     title = models.CharField(max_length=128)
     url = models.URLField()
     views = models.IntegerField(default=0)
+    slug = models.SlugField(null=True, default=None)
+    
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.title)
+        super(Page, self).save(*args, **kwargs)
+        
+    class Meta:
+        verbose_name_plural = 'pages'
     
 
     def __str__(self):
